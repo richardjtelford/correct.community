@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "Richard.Telford@uib.no",
            comment = c(ORCID = "0000-0001-9826-3076"))
-Description: Reproducible correction of errors in community data
+Description: Reproducible correction of errors in community data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -16,3 +16,7 @@ RoxygenNote: 7.1.1
 Suggests: 
     testthat (>= 2.0.0)
 Config/testthat/edition: 2
+Imports: 
+    readr,
+    assertr,
+    dplyr

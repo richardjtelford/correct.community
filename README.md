@@ -8,9 +8,10 @@
 [![R-CMD-check](https://github.com/richardjtelford/correct.community/workflows/R-CMD-check/badge.svg)](https://github.com/richardjtelford/correct.community/actions)
 <!-- badges: end -->
 
-Community data inevitably contain errors due to misidentifications or
-oversight and need correcting. The goal of correct.community is to
-provide a framework for correcting these errors in a reproducible way.
+Community data inevitably contain errors due to, for example,
+misidentifications or recording errors, and need correcting. The goal of
+the `correct.community` package is to provide a framework for correcting
+these errors in a reproducible way.
 
 ## Installation
 
@@ -22,15 +23,6 @@ with:
 remotes::install_github("richardjtelford/correct.community")
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-#library(correct.community)
-## basic example code
-```
-
 ## Data required
 
 -   turf community data
@@ -39,6 +31,25 @@ This is a basic example which shows you how to solve a common problem:
 -   turfID list
 -   siteID list
 -   corrections
+
+### Step 1
+
+Make a correction template file with `cc_make_template()` and fill it in
+using Excel or similar.
+
+### Step 2
+
+Import with your favourite data importing function (`readr::read_csv`
+recommended)
+
+### Step 3
+
+Validate the corrections to check that sites, species, etc are valid.
+
+### Step 4
+
+Classify the errors into different types and iterate over these to fix
+the errors.
 
 ## Initial checks
 
